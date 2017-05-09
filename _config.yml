@@ -14,13 +14,13 @@ keywords: "Hexo, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2017
 
 # icon between year and author @Footer
 authoricon: heart
 
 # Footer `powered-by` and `theme-info` copyright
-copyright: true
+copyright: false
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -32,11 +32,11 @@ copyright: true
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page, added in main hexo config.
 # subtitle: Subtitle
-index_with_subtitle: false
+index_with_subtitle: true
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -48,7 +48,7 @@ menu:
   #categories: /categories
   #about: /about
   archives: /archives
-  tags: /tags
+  # tags: /tags
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -78,9 +78,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
+# scheme: Muse
+# scheme: Mist
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -140,9 +140,8 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
-
+social:
+  GitHub: https://github.com/xJkit
 
 # Social Links Icons
 # Icon Mapping:
@@ -154,15 +153,14 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  # Twitter: twitter
+  # Weibo: weibo
 
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
-
+avatar: /images/avatar.jpg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -236,7 +234,7 @@ auto_excerpt:
 post_meta:
   item_text: true
   created_at: true
-  updated_at: false
+  updated_at: true
   categories: true
 
 # Post wordcount display settings
@@ -278,7 +276,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night eighties
 
 
 # ---------------------------------------------------------------
@@ -302,12 +300,12 @@ han: false
 #baidu_analytics:
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname:
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: xjkit
   count: true
 
 # Hypercomments
@@ -347,10 +345,11 @@ changyan:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+# <meta name="google-site-verification" content="6etm5eNSwOWHStJ_UQgRN9kz6HNxQQNLEnSG8Io7tro" />
+google_site_verification: 6etm5eNSwOWHStJ_UQgRN9kz6HNxQQNLEnSG8Io7tro
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-98610238-1
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
@@ -366,10 +365,10 @@ changyan:
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 0
+# duoshuo_info:
+#   ua_enable: true
+#   admin_enable: false
+#   user_id: 0
   #admin_nickname: Author
 
 
